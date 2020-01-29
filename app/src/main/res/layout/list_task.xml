@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    app:cardCornerRadius="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:id="@+id/reflection_image_list"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/reflection_tree"/>
+
+        <TextView
+            android:id="@+id/Status"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="Status"
+            android:hint="Status"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Title"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/reflection_title_list"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingTop="15dp"
+            android:text="Reflections..."
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:id="@+id/reflection_description_list"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reflection_time_stamp"
+            android:padding="10dp"
+            android:text="Date created"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

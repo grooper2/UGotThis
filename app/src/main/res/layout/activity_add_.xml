@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Activity">
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="118dp"
+        android:layout_height="66dp"
+        android:text="Clear"
+        android:background="@drawable/my_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/discription"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="379dp"
+        android:layout_height="85dp"
+        android:background="@drawable/my_edit_text"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:padding="4dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <EditText
+        android:id="@+id/discription"
+        android:layout_width="383dp"
+        android:layout_height="208dp"
+        android:background="@drawable/my_edit_text"
+        android:ems="100"
+        android:gravity="top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="100"
+        android:maxLength="5000"
+        android:maxLines="100"
+        android:minLines="1"
+        android:padding="4dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/edit_task"
+        android:layout_width="146dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="Create Task"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="118dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/my_button"
+        android:text="Done"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toEndOf="@+id/btn_clear"
+        app:layout_constraintTop_toBottomOf="@+id/discription"
+        app:layout_constraintVertical_bias="0.634" />
+
+    <ImageView
+        android:id="@+id/postCameraButton"
+        android:layout_width="54dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
